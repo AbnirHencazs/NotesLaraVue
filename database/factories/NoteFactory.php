@@ -22,7 +22,8 @@ class NoteFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'excerpt' => $this->faker->text(120),
+            'content' => $this->faker->text(1200)
         ];
     }
 }
