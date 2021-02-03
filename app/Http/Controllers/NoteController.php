@@ -27,7 +27,8 @@ class NoteController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Notes/Create');
+        //La ruta me dirige a éste metodo y renderizo el formulario para crear una nueva nota
     }
 
     /**
