@@ -23,14 +23,14 @@
                                         {{ note.excerpt }}
                                     </td>
                                     <td class="px-4 py-2">
-                                        <intertia-link :href="route('notes.show', note.id)">
+                                        <inertia-link :href="route('notes.show', note.id)">
                                             Ver
-                                        </intertia-link>
+                                        </inertia-link>
                                     </td>
                                     <td class="px-4 py-2">
-                                        <intertia-link :href="route('notes.edit', note.id)">
+                                        <inertia-link :href="route('notes.edit', note.id)">
                                             Editar
-                                        </intertia-link>
+                                        </inertia-link>
                                     </td>
                                 </tr>
                             </table>
