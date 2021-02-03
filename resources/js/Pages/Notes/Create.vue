@@ -62,7 +62,7 @@
         },
         methods: {
             submit() {
-                this.$inertia.post( this.route('notes.update', this.note.id), this.form )
+                this.$inertia.post( this.route('notes.store'), this.form )
                 //this.form hace referencia a la variable que engloba tanto a content como excerpt
             }
         }
