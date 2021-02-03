@@ -24,6 +24,11 @@ Route::get('/', function () {
     ]);
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
+Route::get('home', function() {
+    return Inertia::render('Home');
+});
+
+Route::get('dashboard', [App\Http\Controllers\PageController::class, 'dashboard'])
+    ->middleware('auth:sanctum')->name('dashboard');
+
+Route::resource('notes', App\Http\Controllers\NoteController::class)->middleware('auth:sanctum');
