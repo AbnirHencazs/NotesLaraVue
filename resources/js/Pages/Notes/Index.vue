@@ -30,5 +30,8 @@
             AppLayout,
             Welcome,
         },
+        props: {
+            notes: Array,
+        }
     }
 </script>
