@@ -3191,6 +3191,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 
@@ -30250,6 +30256,21 @@ var render = function() {
                               "\n                                Dashboard\n                            "
                             )
                           ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "jet-nav-link",
+                          {
+                            attrs: {
+                              href: _vm.route("notes.index"),
+                              active: _vm.route().current("notes.*")
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                Notes\n                            "
+                            )
+                          ]
                         )
                       ],
                       1
@@ -30784,6 +30805,21 @@ var render = function() {
                       [
                         _vm._v(
                           "\n                        Dashboard\n                    "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "jet-responsive-nav-link",
+                      {
+                        attrs: {
+                          href: _vm.route("notes.index"),
+                          active: _vm.route().current("notes.*")
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                        Notes\n                    "
                         )
                       ]
                     )
@@ -32797,12 +32833,9 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "py-12" }, [
         _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
-          _c(
-            "div",
-            { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
-            [_c("welcome")],
-            1
-          )
+          _c("div", {
+            staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg"
+          })
         ])
       ])
     ]
